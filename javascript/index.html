@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+   <meta charset="utf-8" />
+   <!--css-->
+   <title>js app</title>
+   <!--font-->
+   <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+   <!--jquery-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!-- Bootstrap -->
+   <link href="bootstrap.min.css" rel="stylesheet" media="screen">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="bootstrap.min.js"></script>
+   <style>
+      body {
+         margin: auto;
+         background-color: #6c8f91;
+         text-align: center;
+      }
+      
+      #zegar {
+         color: yellow;
+         width: 100%;
+         font-family: 'Krona One', sans-serif;
+         font-size: 58px;
+         margin: auto;
+         padding: 150px;
+         letter-spacing: 5px;
+      }
+   </style>
+   <script type="text/javascript">
+      function odliczanie() {
+         var dzisiaj = new Date();
+         var dzien = dzisiaj.getDate();
+         var miesiac = dzisiaj.getMonth() + 1;
+         var rok = dzisiaj.getFullYear();
+         var godzina = dzisiaj.getHours();
+         if (godzina < 10) godzina = "0" + godzina;
+         var minuta = dzisiaj.getMinutes();
+         if (minuta < 10) minuta = "0" + minuta;
+         var sekunda = dzisiaj.getSeconds();
+         if (sekunda < 10) sekunda = "0" + sekunda;
+         document.getElementById("zegar").innerHTML = dzien + "/" + miesiac + "/" + rok + "|" + godzina + ":" + minuta + ":" + sekunda;
+         setTimeout("odliczanie()", 1000);
+      }
+   </script>
+</head>
+
+<body onload="odliczanie();">
+   <div id="zegar"></div>
+   <script type="text/javascript">
+      document.getElementById("zegar").innerHTML = dzien + "/" + miesiac "/" + rok "|" + godzina + ":" + minuta + ":" + sekunda;
+   </script>
+   <script>
+      addDiv();
+   </script>
+</body>
+
+</html>
