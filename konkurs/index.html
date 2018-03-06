@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1,0">
+   <title>Spot Forum. Pasja-informatyki</title>
+   <link href="style.css" type="text/css" rel="stylesheet" />
+   <link href='http://fonts.googleapis.com/css?family=Amarante&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Amatic+SC&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <script src="jquery.marquee.min.js"></script>
+   <srcipt src="http://rawgithub.com/tobia/Pause/master/jquery.pause.js"></srcipt>
+   <script type="text/javascript">
+      $(function () {
+         $('.marquee').marquee({
+            duration: 20000
+            , startVisible: false
+            , direction: 'up'
+         });
+         var $mq = $('.marquee').marquee();
+         //Pause
+         $('.t').click(function () {
+            $mq.marquee('toggle');
+         });
+         $('.marquee').marquee1({
+            duration: 12500
+            , startVisible: false
+            , direction: 'up'
+         });
+      });
+   </script>
+</head>
+
+<body>
+   <header><img src="png/003-balloons.png" alt="baloon"><img src="png/001-cake.png" alt="cake"> <img src="png/002-gift.png" alt="gift"><a class='t' href='#'>Click</a></header>
+   <div class="marquee" data-direction='up' data-duration='20000'>
+      <div id="uno">
+         <p>Czego się uczyć?
+            <br>Przyszła praca...
+            <br>???
+            <br> Co to jest API
+            <br>???</p>
+      </div>
+      <div id="fig"> </div>
+   </div>
+   <div class="marquee ver" data-direction='up' data-duration='12500'>
+      <div id="duo">
+         <p>Jak sprawdzić
+            <BR>czy mysz znajduje się
+            <br>w jakimś
+            <br> polu SFML???</p>
+      </div>
+      <div id="figduo"> </div>
+   </div>
+   <div class="marquee" data-direction='up' data-duration='20000'>
+      <div id="tres">
+         <p>Poszukuje gry
+            <br> z dziecinstwa
+            <br>???
+            <br> Java czy C#
+            <br>???</p>
+      </div>
+      <div id="figtres"> </div>
+   </div>
+   <div class="marquee ver" data-direction='up' data-duration='12500'>
+      <div id="cuatro">
+         <p> Diagnoza zepsutego
+            <br> komputera
+            <br>???
+            <br> SASS???</p>
+      </div>
+      <div id="figcuatro"> </div>
+   </div>
+   <div class="marquee" data-direction='up' data-duration='20000'>
+      <div id="cino">
+         <p>Znaki po haszu...
+            <br> adres URL
+            <br>???
+            <br> HTML pomoc z kodem</p>
+      </div>
+      <div id="figcino"> </div>
+   </div>
+   <div id="seis"> <b>Forum.</b> Pasja-informatyki zna wszystkie odpowiedzi !</div>
+   <footer> 2017
+      <br>Konkurs - Forum.Pasja-Informatyki
+      <p class="foot">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+   </footer>
+</body>
+
+</html>
